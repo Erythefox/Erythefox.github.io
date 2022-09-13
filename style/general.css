@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  background-color: pink;
+}
+
+nav li:hover {
+  background-color: pink;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: gray;
+  font-weight: bold;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+nav li a:hover {
+  color: gray;
+  border-bottom: 5px solid rgb(246, 246, 246);
+  border-top: 5px solid rgb(246, 246, 246);
+  border-left: 5px solid rgb(246, 246, 246);
+  border-right: 5px solid rgb(246, 246, 246);
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  width: 25%;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li:hover ul li {
+  float: none;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-image: url(/images/mcdonaldrobloxian.png); */
+}
